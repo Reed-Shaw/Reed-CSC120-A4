@@ -6,7 +6,7 @@ public class Passenger {
         this.name = name;
     }
 
-    public String boardCar(Car c){
+    private String boardCar(Car c){
         if(c.addPassenger(this)){
             c.addPassenger(this);
             return "The passenger boarded the car.";
@@ -16,7 +16,7 @@ public class Passenger {
         }
     }
 
-    public String getOffCar(Car c){
+    private String getOffCar(Car c){
         if(c.removePassenger(this)){
             c.removePassenger(this);
             return "The passenger got off the car.";
